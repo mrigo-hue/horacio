@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
+        <!-- CORRIGIDO: Removida a quebra de linha no meio da tag meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>blog</title>
         <style>
             header{
@@ -12,20 +11,15 @@
                 color:#FFFFFF;
             }
             main {
-                background-color: 
-                #FFFFFF;
+                background-color: #FFFFFF;
+                color: #183C63; /* ADICIONADO: Unificado a cor de texto do segundo bloco 'main' aqui */
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
                 border: 5px solid #cf1010;
             }
-            main  {
-                background-color: #FFFFFF;
-                color: #183C63;
-                max-width: 800px;
-                margin: 0 auto;
-            }
+            /* CORRIGIDO: O segundo bloco de seletores 'main' duplicado foi removido daqui para evitar redundância */
         </style>
     </head>
     <body>
@@ -34,20 +28,25 @@
             <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
         </header>
         <main>
-             <img scr= "tech.png"
-                 alt="Logotipo conceitual de tecnoogia futura"
-      <div> 
-        <h2>Meu primeiro post</h2>
-        <p class= "artigo-autor">Por: Marcelo Paludetto</p> 
-        <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-        <button> <span>0</span></button>
-        <button> <span>0</span></button>
-         <div>
-      <article> 
- <main> 
+            <!-- CORRIGIDO: Adicionada a tag de abertura <article> no local correto para estruturar o artigo -->
+            <article>
+                <!-- CORRIGIDO: 'scr' alterado para 'src', arrumada a digitação "tecnoogia" e fechada a tag '>' no final -->
+                <img src="tech.png" alt="Logotipo conceitual de tecnologia futura">
+                <div> 
+                    <h2>Meu primeiro post</h2>
+                    <!-- CORRIGIDO: Removido o espaço extra em class= "artigo-autor" -->
+                    <p class="artigo-autor">Por: Marcelo Paludetto</p> 
+                    <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+                    <button> <span>0</span></button>
+                    <button> <span>0</span></button>
+                <!-- CORRIGIDO: Alterado '<div>' incorreto do final para a tag de fechamento '</div>' -->
+                </div>
+            <!-- CORRIGIDO: Adicionada a tag de fechamento '</article>' que faltava -->
+            </article>
+        <!-- CORRIGIDO: Removidas as tags duplicadas '<article>', '<main>' e '<div>' mal formatadas que estavam aqui no final -->
+        </main> 
 
-    <script scr="script.js"></script>
- </body>
- 
-    
-
+        <!-- CORRIGIDO: 'scr' alterado para 'src' -->
+        <script src="script.js"></script>
+    </body>
+</html>

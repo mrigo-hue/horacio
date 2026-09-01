@@ -1,44 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
+<head>
+    <html lang="pt-br">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
         <style>
-            header {
-                background-color: #183C63;
-                color: #FFFFFF;
+            header{    
+            background-color: #00008b;
+            color:#ffffff;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #cf1010;
             }
-            main {
-                background-color: #FFFFFF;
-                color: #183C63;
-                text-align: center;
+            main { 
+                background-color: #00008b;
+                color: #00008b;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
-                border: 5px solid #cf1010;
-            }
+             
+        }
+
+         img {     
+          width: ;
+          height: ;
+          
+        }
+         .artigo-autor {   
+          font-weight: bold;
+         }
+
+
+
         </style>
     </head>
     <body>
-        <header>
-            <h1>Meu blog tech</h1>
-            <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        </header>
+        <header> 
+        <h1> Meu blog tech</h1>
+        <p>vou compartilhar comhecimentos sobre tecnologia e programação</p>
         
-        <main>
-            <article>
-                <img src="tech.png" alt="Logotipo conceitual de tecnologia futura">
-                <div> 
-                    <h2>Meu primeiro post</h2>
-                    <p class="artigo-autor">Por: Marcelo Paludetto</p> 
-                    <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-                    <button><span>0</span> Curtidas</button>
-                    <button><span>0</span> Comentários</button>
-                </div>
-            </article>
-        </main>
+        <header>
+            <main> 
+            
+            <img src="buda.png" alt="">
+            <div>
+                
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programaçãoe curiosidades da área de tecnologia</p>
+                <button> 👾  <span>0</span></button>
+            </div>
+            
+            <main>       
+            
+        </body>  
+           <script>
+            const botao= document.querySelector("button");
+            botao.addEventListener("click", botaoClicado);
 
-        <script src="script.js"></script>
-    </body>
-</html>
+            function botaoClicado(){ 
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                texto.textContent++;
+                
+
+
+                
+            }
+           </script>                         
+        </html>
+        
+        
+        
